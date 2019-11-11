@@ -1,0 +1,136 @@
+<!--logs.wxml-->
+<view>
+  <view class="top">
+    <view class="user-logo">
+      <i-icon type="addressbook" size="40" style="border:2px solid rgb(107, 160, 221);border-radius: 25px; margin-right:5px;" color="rgb(107, 160, 221)" />
+      <view style="width:70%;">
+        <i-row>
+          <text>xxx</text>
+        </i-row>
+        <i-row>
+          <i-col span="10">
+            <text style="font-size:25rpx">分管经理</text>
+          </i-col>
+          <i-col span="14">
+            <i-tag color="blue" type="border">查看岗位职责</i-tag>
+          </i-col>
+        </i-row>
+      </view>
+    </view>
+  </view>
+  <view class="header-wrap">
+    <view class="header">
+      <view class="h1">
+        <i-icon type="emoji_fill" size="20" style="margin-left: 4rpx;" color="rgb(149, 192, 248)" />
+        <text style="margin-left: 20rpx;color:rgb(149, 192, 248);">当前排名 12</text>
+        <i-icon type="feedback" size="20" style="margin-left:86px;" />
+        <text style="margin-left:20rpx">贡献值 : 0</text>
+      </view>
+      <view class="h2">
+        <i-icon type="financial_fill" size="20" style="margin-left: 4rpx;" color="rgb(230, 150, 150);" />
+        <text style="margin-left: 20rpx;">昨日收益 :12</text>
+        <view style="margin-left:80px;">
+          <i-tag color="green" type="dot">收益明细</i-tag>
+        </view>
+      </view>
+      <view class="h3">
+        <view class="h3-1">通知更告</view>
+        <view class="h3-2">公安部直属招聘2018</view>
+        <view class="h3-3">
+          <i-icon type="more" size="20" bindtap="toIndex"/>
+        </view>
+      </view>
+    </view>
+    <text class="font-content" style="margin-bottom:10rpx">常用应用</text>
+    <view class="header">
+      <i-grid>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>我的发起</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>我的待办</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>抄送给我</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>已办查看</i-grid-label>
+        </i-grid-item>
+      </i-grid>
+    </view>
+    <view class="company-logo">
+      <image src="../../static/img/logo.jpg"></image>
+      <text style="color:#f8f8f9;font-size:50rpx;top: -90px;position: relative;">
+        互联网+
+      </text>
+    </view>
+
+    <view class="system">
+      <i-grid>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>个人账户</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>个人排名</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>成长之路</i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon type="emoji_fill" size="20" />
+          </i-grid-icon>
+          <i-grid-label>学习交流</i-grid-label>
+        </i-grid-item>
+      </i-grid>
+    </view>
+    <view class="test">
+      <i-row>
+        <i-col span="6">
+          hello
+        </i-col>
+        <i-col span="12">
+          hello
+        </i-col>
+        <i-col span="6">
+          hello
+        </i-col>
+      </i-row>
+      <i-row>
+        <i-col span="6">
+          hello
+        </i-col>
+      </i-row>
+      <i-row>
+        <i-col span="6">
+          hello
+        </i-col>
+      </i-row>
+    </view>
+  </view>
+</view>
+
+<!-- <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block> -->

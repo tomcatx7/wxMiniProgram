@@ -1,0 +1,33 @@
+/* pages/login/login.wxss */
+
+.logo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50rpx;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px 0px 30px;
+}
+
+.content input {
+  border: 2px solid wheat;
+  border-radius: 10rpx;
+}
+
+.content label{
+  margin-left: 10rpx;
+}

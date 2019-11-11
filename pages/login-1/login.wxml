@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="logo">
+    <view>
+      <image src="../../static/img/young.jpg" style="width: 128rpx;height: 128rpx;border-radius: 50%;border:2px solid wheat"></image>
+    </view>
+  </view>
+  <view class="form">
+    <view class="content">
+      <input placeholder="" type="text" maxlength="18" bindblur="getUserName" value="{{userName}}"  focus="true" disabled="{{disabled}}"></input>
+      <label>账户</label>
+    </view>
+    <view class="content">
+      <input placeholder="" type="password" maxlength="18" bindblur="getPassword" value="{{password}}" disabled="{{disabled}}"></input>
+      <label>密码</label>
+    </view>
+    <button bindtap="doLogin" style="margin-top:10%;border-radius:50%">登录</button>
+  </view>
+</view>

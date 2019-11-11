@@ -1,0 +1,12 @@
+/* pages/user/user.wxss */
+.header{
+  background-color: #FF7777;
+  width: 100%;
+  height: 150px;
+}
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+
+}

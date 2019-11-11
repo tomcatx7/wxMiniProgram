@@ -1,0 +1,12 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class="header">
+    <view class="userInfo">
+      <image src="{{avatarUrl}}"></image>
+      <view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

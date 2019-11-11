@@ -1,0 +1,18 @@
+<!--pages/admin/admin.wxml-->
+<view class="content">
+  <i-row i-class="header h1">
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+  </i-row>
+  <i-row i-class="header h2">
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+  </i-row>
+  <i-row i-class="header h3">
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+    <i-col span="8" i-class="col-height">1231231</i-col>
+  </i-row>
+</view>

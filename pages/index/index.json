@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "qu劳务",
+  "navigationBarBackgroundColor": "#FF7777",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "i-grid": "../../static/dist/grid/index",
+    "i-grid-item": "../../static/dist/grid-item/index",
+    "i-grid-icon": "../../static/dist/grid-icon/index",
+    "i-grid-label": "../../static/dist/grid-label/index",
+    "i-icon": "../../static/dist/icon/index",
+    "i-input": "../../static/dist/input/index"
+  }
+}

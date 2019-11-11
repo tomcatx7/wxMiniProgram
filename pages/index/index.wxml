@@ -1,0 +1,127 @@
+<!--pages/index/index.wxml-->
+<page>
+  <view>
+    <view class="search">
+      <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+          <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+              <icon type="clear" size="14"></icon>
+            </view>
+          </view>
+          <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+          </label>
+        </view>
+        <!-- <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view> -->
+      </view>
+      <!-- <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view> -->
+    </view>
+    <view>
+      <view class="weui-grids">
+        <block wx:for="{{menus}}" wx:key="menuName">
+          <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="{{item.url}}" />
+            <view class="weui-grid__label">{{item.menuName}}</view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    <view class="adv center">
+      <image style="margin-top:0px; height:70px; width:94%; border-radius: 20rpx; " src="../../static/img/logo.jpg"></image>
+    </view>
+    <view class="content">
+      <view class="weui-tab" id="info">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+        </view>
+        <view class="weui-tab__panel">
+          <scroll-view class="weui-tab__content scroll-list" scroll-y="true" hidden="{{activeIndex != 0}}">选项一的内容
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+            <view>选项一的内容</view>
+          </scroll-view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</page>
