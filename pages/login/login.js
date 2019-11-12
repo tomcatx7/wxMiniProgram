@@ -24,12 +24,18 @@ Page({
   },
   login() {
     if (globalData.loginCode) {
-      wx.request({
-        url: '',
+      // wx.request({
+      //   url: '',
+      // })
+      // wx.switchTab({
+      //   url: '../index/index',
+      // })
+      wx.navigateTo({
+        url: '../register/register',
       })
-      wx.switchTab({
-        url: '../index/index',
-      })
+      // wx.switchTab({
+      //   url: '../register/register',
+      // })
     }
   }
 })

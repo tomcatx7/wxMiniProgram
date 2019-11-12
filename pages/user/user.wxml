@@ -2,7 +2,7 @@
 <view>
   <view class="header">
     <view class="userInfo">
-      <image src="{{avatarUrl}}"></image>
+      <image src="{{avatarUrl}}" style="width:80rpx;height: 80rpx; border-radius: 50%;"></image>
       <view>
       </view>
     </view>

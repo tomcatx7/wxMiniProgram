@@ -1,0 +1,7 @@
+/* pages/register/register.wxss */
+page,.page{height:100%;}
+.getCode-btn{
+  color: #CCCCCC;
+  -webkit-text-fill-color: green;
+  font-weight:bold
+}
