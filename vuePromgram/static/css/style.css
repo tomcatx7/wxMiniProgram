@@ -1,0 +1,481 @@
+#top{
+    width: 1000px;
+    height: 105px;
+    margin: 0 auto;
+    background: url(../img/logo.jpg) no-repeat left 18px;
+}
+.company_infor{
+    width: 430px;
+    height: 31px;
+    padding-top: 23px;
+}
+
+.company_infor_public{
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: right;
+    color: #909090;
+}
+.home_bg{
+    background: url(../img/home_bg.jpg) no-repeat 8px 0px;
+}
+.collect_bg{
+    background: url(../img/collect_bg.jpg) no-repeat 8px 0px;
+}
+
+.tel{
+    height: 20px;
+    line-height: 20px;
+    color: #909090;
+}
+
+.tel >font{
+    color: #ff0000;
+    font-size: 20px;
+    font-family: arial;
+}
+.nav{
+    width: 800px;
+    height: 40px;
+}
+.nav ul li{
+    width: 84px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-right: 6px;
+    font-family: "微软雅黑";
+    text-align: center;/*行家一出手，便知有没有！*/
+}
+#contact{
+    margin-right: 0;
+    width: 64px;
+    float: right;
+    text-align: right;
+}
+
+.nav ul li a{
+    color: black;
+}
+.nav ul li a :hover{
+    display: block;
+    background-color: #ff0000;
+    color: white;
+}
+/*banner图片横幅*/
+#banner{
+    width: 100%;
+    height: 436px;
+    border-top: 6px solid #0059b5;
+    background-color: #017ab2;
+}
+.banner_content{
+    width: 1000px;
+    height: 436px;
+    margin: 0 auto;
+}
+/*service员源企业服务*/
+#service{
+    width: 1000px;
+    height: 452px;
+    margin: 0 auto;
+}
+#company_title{
+    width: 1000px;
+    height: 139px;
+    margin: 0 auto;
+    /*border: 1px red solid;*/
+}
+.service_public{
+    width: 255px;
+    height: 55px;
+    line-height: 19px;
+    margin-top: 146px;
+}
+.training_intro{
+    width: 255px;
+    margin-left: 13px;
+    margin-right: 143px;
+    line-height: 26px;
+    font-size: 12px;
+    color:#4C4C4C ;
+}
+.title1{
+    width: 235px;height: 64px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.picture1{
+    background: url(../img/i1.png) no-repeat;
+    width: 271px;
+    height: 312px;
+}
+.picture2{
+    background: url(../img/i2.png) no-repeat;
+    width: 271px;
+    height: 312px;
+}
+.picture3{
+    background: url(../img/i3.png) no-repeat;
+    width: 271px;
+    height: 312px;
+}
+h4{
+    font-family: "宋体";
+    font-size: 15px;
+    margin-left:100px ;
+    margin-top: 16px;
+}
+
+.i2width{
+    margin-left: 96px;
+}
+#service_picture{
+    height: 311px;
+    width: 1000px;
+}
+
+/*case员源客户*/
+/*1*/
+#case{
+    width: 1000px;
+    height: 508px;
+    margin: 0 auto;
+
+}
+.picture4{
+    background: url(../img/casename.png) no-repeat;
+    width: 313px;
+    height: 394px;
+}
+
+.title2{
+    width: 235px;height: 64px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#ClassCase{width: 1000px;height: 387px;}
+
+.i3width{
+    margin-left: 30px;
+}
+.custom_case_pub{
+    width: 271px;
+    height: 321px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.custom_case_content > h3{
+    height: 21px;
+    border-bottom: 1px solid #c2c8cd;
+    width: 272px;
+    font-size: 14px;
+    color: #64b9fa;
+    margin-top: 27px;
+    margin-left: 21px;
+}
+.custom_case_content > img{
+    display: block;
+    margin-top: 22px;
+    margin-left: 21px;
+    margin-bottom: 24px;
+}
+.custom_case_content >p{
+    height:78px;
+    width:272px;
+    margin-left: 21px;
+    line-height: 22px;
+    margin-bottom: 26px;
+    font-family: "宋体";
+    font-size: 12px;
+}
+.more{
+    width: 74px;
+    height: 24px;
+    display: block;
+    float: right;
+    margin-right: 8px;
+}
+
+/*info员源新闻*/
+#info-max{
+    width: 1000px;
+    height: 433px;
+    margin: 0 auto;
+    margin-top: 5px;
+    /*border: 1px green solid;*/
+}
+#info_title{
+    width: 1000px;
+    height: 67px;
+    /*border: 1px gold solid;*/
+}
+.info_ltitle{
+    width: 435px;
+    height: 67px;
+    margin-top: -43px;
+}
+.info_rtitle{
+    width: 435px;
+    height: 67px;
+    float: right;
+    margin-top: -156px;
+}
+.div_info_h3{
+    width: 200px;
+    height: 19px;
+    display: block;
+    margin-top: 90px;
+}
+.div_info_h3 h3{
+    font-family: "宋体";
+    font-size: 18px;
+}
+.div_info_h3  span{
+    color: red;
+}
+.info_ltitle_right{
+    width: 63px;
+    height: 18px;
+    text-align: right;
+    float: right;
+    margin-right: ;
+    margin-top: -18px;
+}
+#info_left{
+    width: 435px;
+    height:362px;
+    /*border: 1px blue solid;*/
+    display: block;
+    margin-top: -45px;
+    float: left;
+}
+#info_left1{
+    width: 435px;
+    height: 164px;
+    border-bottom: 1px #8D8D8D solid;
+}
+.div_info_img{
+    width: 174px;
+    height: 115px;
+    float: left;
+    margin-top: 35px;
+}
+.info_img_right{
+    width: 247px;
+    height: 116px;
+    float: right;
+    margin-top: 49px;
+}
+.info_img_right h2{
+    font-family: "宋体";
+    font-size: 12px;
+    color: #3E3E3E;
+    margin-top: -18px;
+    margin-bottom: 5px;
+}
+.info_img_right p{
+    font-family: "宋体";
+    line-height: 24px;
+    font-size: 13px;
+    color: #3E3E3E;
+}
+#info_left2 ul li a{
+    color: #3E3E3E;
+    font-size: 12px;
+    font-family: "宋体";
+    line-height: 33px;
+    margin-top: -10px;
+    margin-left: 15px;
+}
+#info_left2 ul li {
+    background: url(../img/list.png) no-repeat left 13px;
+}
+#info_right{
+    width: 435px;
+    height: 347px;
+    float: right;
+    margin-top: -30px;
+/*  border: 1px gainsboro solid;*/
+}
+#div_table table{
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: center;
+    margin-top: 18px;
+    color: #3E3E3E;
+}
+td{
+    width: 109px;
+    height: 12px;
+    margin-right: 18px;
+}
+.odd{
+    background-color: #F0F0F0;
+}
+.even{
+    background-color: #FAFAFA;
+}
+
+/*合作企业*/
+#test-max{
+    width: 1000px;
+    height: 430px;
+    /*border: 1px palevioletred solid;*/
+    margin: 0 auto;
+}
+#text-title{
+    width: 100%;
+    height: 77px;
+    /*border: 1px deeppink solid;*/
+}
+.partner{
+    width: 325px;
+    height: 28px;
+    float: left;
+    margin-top: 18px;
+}
+.text-content1{
+    width: 1000px;
+    height: 165px;
+    /*border: 1px yellow solid;*/
+}
+.text-lcontent{
+    width: 181px;
+    height: 165px;
+    text-align: center;
+    display: block;
+    margin-right: 19px;
+}
+.text-lcontent img{
+    margin-bottom: 13px;
+}
+.text-lcontent  span{
+    font-family: "宋体";
+    font-size: 12px;
+    width:179px ;
+    height: 13px;
+}
+.text-lcontent1{
+    width: 181px;
+    height: 165px;
+    text-align: center;
+    display: block;
+    margin-right: 6px;
+}
+.text-lcontent1 img{
+    margin-bottom: 13px;
+}
+.text-lcontent1  span{
+    font-family: "宋体";
+    font-size: 12px;
+    width:179px ;
+    height: 13px;
+}
+.text-content2{
+    width: 1000px;
+    height: 185px;
+}
+#friendlink{
+    width: 1000px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../img/flink.png) no-repeat left;
+    border: 1px white solid;
+}
+#links{
+    width: 1000px;
+    height: 15px;
+    margin-top: 25px;
+    margin-left: 70px;
+    border: 1px white solid;
+}
+#links ul li{
+    float: left;
+    font-size: 12px;
+    font-family: "宋体";
+    margin-right: 10px;
+    width: 150px;
+    text-align: center;
+    border-right: 1px black solid;
+}
+#links ul li a{
+    color: black;
+}
+
+/*底部导航*/
+#footer_nav{
+    width: 100%;
+    height: 38px;
+    background: url(../img/footer_nav.png) no-repeat center top #002C5A;
+}
+#footer_bootme{
+    width: 100%;
+    height: 288px;
+    background: url(../img/footer_bottmer.png) no-repeat center  #0059B5;
+}
+#bootme_nav{
+    width: 822px;
+    height: 37px;
+    margin: 0 auto;
+    /*border: 1px red solid;*/
+}
+#bootme_nav ul li{
+    color: #FFFFFF;
+    width: 84px;
+    height: 40px;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    text-align: center;/*行家一出手，便知有没有！*/
+    float: left;
+    margin-right: 5px;
+}
+#bootme_nav ul li a{
+    color: white;
+}
+#bootme1{
+    width: 1000px;
+    height: 84px;
+    margin: 0 auto;
+    border: 1px #0059B5 solid;
+}
+.bootme_intro{
+    width: 1000px;
+    margin-left: 10px;
+    margin-top:25px ;
+    line-height: 1px;
+    font-size: 12px;
+    font-family: "宋体";
+    color:white ;
+}
+#bootme2{
+    width: 1000px;
+    height: 204px;
+    margin: 0 auto;
+    /*border: 1px red solid;*/
+}
+#saosao{
+    width: 130px;
+    height: 166px;
+    margin-left: 222px;
+    text-align: center;
+    color: white;
+}
+#lianxi{
+    width: 291px;
+    height: 133px;
+    float: right;
+    margin-top: -167px;
+    margin-right: 241px;
+}
+#beian{
+    width: 693px;
+    height: 24px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "宋体";
+    color: white;
+}
