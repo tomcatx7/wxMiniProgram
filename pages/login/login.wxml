@@ -1,10 +1,10 @@
 <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
 <view class="userInfo" style="height:{{windowHeight}}px">
-  <view class="userInfo-avatar">
+  <view class="userInfo-avatar" bindtap="login">
     <open-data type="userAvatarUrl"></open-data>
   </view>
   <open-data type="userNickName"></open-data>
   <!-- 需要使用 button 来授权登录 -->
-  <button wx:if="{{canIUse}}" bindtap="login" >授权登录</button>
+  <text wx:if="{{canIUse}}">点击头像授权登录</text>
   <view wx:else>请升级微信版本</view>
 </view>

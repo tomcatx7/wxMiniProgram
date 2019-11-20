@@ -5,3 +5,7 @@ page,.page{height:100%;}
   -webkit-text-fill-color: green;
   font-weight:bold
 }
+.icon-right-top{
+  top: 15%;
+  left: 85%
+}

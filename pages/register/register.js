@@ -7,10 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    realName: '',
+    idCard: '',
     phone: '',
     verifyCode: '',
+    asyID: '',
     btnDisabled: false,
-    refreshTime: null
+    refreshTime: null,
+    files: []
   },
 
   /**
@@ -85,6 +89,13 @@ Page({
       },
       verifyCode: {
         required: true
+      },
+      realName: {
+        required: true
+      },
+      idCard: {
+        required: true,
+        idcard: true
       }
     }
 
@@ -96,6 +107,13 @@ Page({
       },
       verifyCode: {
         required: "验证码不能为空",
+      },
+      realName: {
+        required: "姓名不能为空"
+      },
+      idCard: {
+        required: "身份证不能为空",
+        idcard: "请输入正确身份证"
       }
     }
     // 创建实例对象
@@ -147,6 +165,45 @@ Page({
     wx.switchTab({
       url: '../index/index',
     })
+  },
+  chooseImage: function(e) {
+    var that = this;
+    wx.chooseImage({
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function(res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        that.setData({
+          files: that.data.files.concat(res.tempFilePaths)
+        });
+        //上传服务器
+        // wx.uploadFile({
+        //   url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+        //   filePath: tempFilePaths[0],
+        //   name: 'file',
+        //   formData: {
+        //     'user': 'test'
+        //   },
+        //   success(res) {
+        //     const data = res.data
+        //     //do something
+        //   }
+        // })
+      }
+    })
+  },
+  previewImage: function(e) {
+    wx.previewImage({
+      current: e.currentTarget.id, // 当前显示图片的http链接
+      urls: this.data.files // 需要预览的图片http链接列表
+    })
+  },
+  cancelImage: function(e) {
+    let index = e.currentTarget.dataset['index'];
+    // console.log(this.data.files)
+    this.data.files.splice(index, 1)
+    this.setData({
+      files: this.data.files
+    })
   }
-
 })

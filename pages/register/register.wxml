@@ -16,6 +16,22 @@
               </view> -->
           <view class="weui-cell">
             <view class="weui-cell__hd">
+              <label class="weui-label">真实姓名</label>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" type="text" data-name="realName" placeholder="真实姓名" bindinput="bindInput" value="{{realName}}" />
+            </view>
+          </view>
+          <view class="weui-cell">
+            <view class="weui-cell__hd">
+              <label class="weui-label">身份证号码</label>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" type="idcard" data-name="idCard" placeholder="绑定身份证号码" bindinput="bindInput" value="{{idCard}}" />
+            </view>
+          </view>
+          <view class="weui-cell">
+            <view class="weui-cell__hd">
               <label class="weui-label">电话号码</label>
             </view>
             <view class="weui-cell__bd">
@@ -33,6 +49,60 @@
               <button class="weui-btn mini-btn getCode-btn" type="default" size="mini" disabled="{{btnDisabled}}" bindtap="getCode">{{refreshTime ? refreshTime+'s' : '发送验证码'}}</button>
             </view>
           </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                  <view class="weui-uploader__overview">
+                    <view class="weui-uploader__title">身份证图片上传</view>
+                    <view class="weui-uploader__info">{{files.length}}/2</view>
+                  </view>
+                  <view class="weui-uploader__tips">
+                    请输入身份证件正反面
+                  </view>
+                </view>
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files" id="uploaderFiles">
+                    <block wx:for="{{files}}" wx:key="*this">
+                      <view class="weui-uploader__file weui-uploader__file_status" bindtap="previewImage" id="{{item}}">
+                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                        <view class="weui-uploader__file-content icon-right-top">
+                          <icon type="cancel" size="23" color="#F43530" data-index="{{index}}" catchtap="cancelImage"></icon>
+                        </view>
+                      </view>
+                    </block>
+                    <!-- <view class="weui-uploader__file">
+                      <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                    </view>
+                    <view class="weui-uploader__file">
+                      <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                    </view>
+                    <view class="weui-uploader__file weui-uploader__file_status">
+                      <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                      <view class="weui-uploader__file-content">
+                        <view class="weui-loading"></view>
+                      </view>
+                    </view> -->
+                    <!-- <view class="weui-uploader__file weui-uploader__file_status">
+                      <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                      <view class="weui-uploader__file-content">
+                        <icon type="warn" size="23" color="#F43530"></icon>
+                      </view>
+                    </view>
+                    <view class="weui-uploader__file weui-uploader__file_status">
+                      <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                      <view class="weui-uploader__file-content">50%</view>
+                    </view> -->
+                  </view>
+                  <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+
         </view>
       </view>
     </view>
